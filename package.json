@@ -1,0 +1,26 @@
+{
+  "name": "moon-lang",
+  "displayName": ".moon",
+  "description": "Extension for Moon lang",
+  "publisher": "MoonLang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "moon",
+      "aliases": ["mn"],
+      "extensions": [".mn"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "moon",
+      "scopeName": "source.moon",
+      "path": "./syntaxes/moon.tmLanguage.json"
+    }]
+  }
+}
